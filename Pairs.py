@@ -1,9 +1,11 @@
-###################################################################################
-# Pairs: Count the number of pairs from input-list whose difference is K. 
+#!/usr/bin/env python
+#
+# Count the number of pairs from input-list whose difference is K. 
 # Input: N integers, and the value K, which 2 <= N <= 10^5 ; 0 < K < 10^9.
 # Example : K=5 array=[1, 5, 7, 2, 2, 7] will return 4 (we count each occurrence)
-###################################################################################
-
+#
+# Copyright (c) 06.05.2017, Huiting Hong
+# 
 
 import sys
 import os
