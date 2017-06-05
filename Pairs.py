@@ -16,7 +16,7 @@ def CheckLastIdx(Matrix,idx):
 	elif math.isnan(Matrix[idx][2]):
 		return 2
 	else:
-		print("Index out of bound, something wrong happen in comparison process")
+		print("Index out of bound, something wrong happened in comparison process")
 
 
 if __name__ == '__main__' :
@@ -31,6 +31,10 @@ if __name__ == '__main__' :
 	Mat = np.nan*np.empty([M,3])
 	Mat[:,0] = list(set(lst))
 
+	# Check constraint
+	if N < 2 or N > pow(10,5) or K <= 0 or K >= pow(10,9):
+		print("The value of N or K does not satisfy with problem settings")
+	
 	# start finding pairs
 	pairN = 0
 	for i,ele in enumerate(Mat[:,0]):
